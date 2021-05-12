@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72C555B8-9FE3-4B4C-AD97-FAB9AF4D890C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MobileShop</RootNamespace>
+    <AssemblyName>MobileShop</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_pos_terminal_48_LcE_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v15.1.Core, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeRush.Common, Version=15.1.6.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.Core, Version=15.1.6.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.Extensions, Version=15.1.6.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.PlugInCore, Version=15.1.6.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeRush.StructuralParser, Version=15.1.6.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.UserControls, Version=15.1.6.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DemoData.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DXCore.Controls.Data.v6.3, Version=15.1.6.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.Utils.v6.3, Version=15.1.6.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraEditors.v6.3, Version=15.1.6.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraGrid.v6.3, Version=15.1.6.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraLayout.v6.3, Version=15.1.6.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Parser, Version=15.1.6.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Platform, Version=15.1.6.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.Office.v15.1.Core, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v15.1.Core, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Tutorials.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.1.UI, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.1.Wizard, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SergeUtils">
+      <HintPath>F:\JAInventory\JAInventory\bin\Debug\SergeUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="XanderUI">
+      <HintPath>G:\XanderUI-master\XanderUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\frm_AddExpense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\frm_AddExpense.Designer.cs">
+      <DependentUpon>frm_AddExpense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\frm_AddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\frm_AddItem.Designer.cs">
+      <DependentUpon>frm_AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\frm_AddFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\frm_AddFrom.Designer.cs">
+      <DependentUpon>frm_AddFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\frm_AddReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\frm_AddReport.Designer.cs">
+      <DependentUpon>frm_AddReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add\Frm_AddRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\Frm_AddRole.Designer.cs">
+      <DependentUpon>Frm_AddRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Dashboard.Designer.cs">
+      <DependentUpon>frm_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_FormAndReportsRights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_FormAndReportsRights.Designer.cs">
+      <DependentUpon>frm_FormAndReportsRights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rights.cs" />
+    <Compile Include="SetupForms\frm_ColorSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupForms\frm_ColorSetup.Designer.cs">
+      <DependentUpon>frm_ColorSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupForms\frm_CompanySetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupForms\frm_CompanySetup.Designer.cs">
+      <DependentUpon>frm_CompanySetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupForms\frm_BrandSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupForms\frm_BrandSetup.Designer.cs">
+      <DependentUpon>frm_BrandSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupForms\frm_DocSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupForms\frm_DocSetup.Designer.cs">
+      <DependentUpon>frm_DocSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupForms\frm_ExpenseSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupForms\frm_ExpenseSetup.Designer.cs">
+      <DependentUpon>frm_ExpenseSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupForms\frm_TypeSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupForms\frm_TypeSetup.Designer.cs">
+      <DependentUpon>frm_TypeSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupForms\frm_UnitSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupForms\frm_UnitSetup.Designer.cs">
+      <DependentUpon>frm_UnitSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransictionsForms\Frm_CashFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransictionsForms\Frm_CashFlow.Designer.cs">
+      <DependentUpon>Frm_CashFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransictionsForms\frm_IMEI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransictionsForms\frm_IMEI.Designer.cs">
+      <DependentUpon>frm_IMEI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransictionsForms\frm_PurchaseInvoices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransictionsForms\frm_PurchaseInvoices.Designer.cs">
+      <DependentUpon>frm_PurchaseInvoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransictionsForms\frm_SaleInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransictionsForms\frm_SaleInvoice.Designer.cs">
+      <DependentUpon>frm_SaleInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\myReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\myReportForm.Designer.cs">
+      <DependentUpon>myReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMangerForms\frm_ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserMangerForms\frm_ChangePassword.Designer.cs">
+      <DependentUpon>frm_ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMangerForms\frm_CreateUsere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserMangerForms\frm_CreateUsere.Designer.cs">
+      <DependentUpon>frm_CreateUsere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMangerForms\frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserMangerForms\frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Main.Designer.cs">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQL.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\frm_AddExpense.resx">
+      <DependentUpon>frm_AddExpense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\frm_AddItem.resx">
+      <DependentUpon>frm_AddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\frm_AddFrom.resx">
+      <DependentUpon>frm_AddFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\frm_AddReport.resx">
+      <DependentUpon>frm_AddReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\Frm_AddRole.resx">
+      <DependentUpon>Frm_AddRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Dashboard.resx">
+      <DependentUpon>frm_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_FormAndReportsRights.resx">
+      <DependentUpon>frm_FormAndReportsRights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupForms\frm_ColorSetup.resx">
+      <DependentUpon>frm_ColorSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupForms\frm_CompanySetup.resx">
+      <DependentUpon>frm_CompanySetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupForms\frm_BrandSetup.resx">
+      <DependentUpon>frm_BrandSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupForms\frm_DocSetup.resx">
+      <DependentUpon>frm_DocSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupForms\frm_ExpenseSetup.resx">
+      <DependentUpon>frm_ExpenseSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupForms\frm_TypeSetup.resx">
+      <DependentUpon>frm_TypeSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupForms\frm_UnitSetup.resx">
+      <DependentUpon>frm_UnitSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransictionsForms\Frm_CashFlow.resx">
+      <DependentUpon>Frm_CashFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransictionsForms\frm_IMEI.resx">
+      <DependentUpon>frm_IMEI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransictionsForms\frm_PurchaseInvoices.resx">
+      <DependentUpon>frm_PurchaseInvoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransictionsForms\frm_SaleInvoice.resx">
+      <DependentUpon>frm_SaleInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\myReportForm.resx">
+      <DependentUpon>myReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMangerForms\frm_ChangePassword.resx">
+      <DependentUpon>frm_ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMangerForms\frm_CreateUsere.resx">
+      <DependentUpon>frm_CreateUsere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMangerForms\frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Main.resx">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-transaction-approved-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-settings-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sorting-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-male-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-folder-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-close-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-bin-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-undo-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-new-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-print-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tick-box-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ledger-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small-stars-on-white-background-abstract-texture-vector-17392662.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-money-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-money-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-20 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-barcode-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8_pos_terminal_48_LcE_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
